@@ -1,0 +1,33 @@
+TM_RUBY="${HOME}/.rvm/bin/rvm-auto-ruby"
+
+softTabs    = true
+softWrap    = false
+tabSize     = 2
+wrapColumn  = 80
+
+fontSize= 16
+
+[ "{README,INSTALL,LICENSE,TODO}" ]
+fileType         = "text.plain"
+
+[ *.{txt,md,mdown,markdown} ]
+spellChecking  = true
+tabSize        = 4
+
+[ *.{html,haml,erb} ]
+softWrap        = false
+
+
+[ *.{icns,ico,jpg,jpeg,m4v,nib,pdf,png,psd,pyc,rtf,tif,tiff,xib} ]
+binary           = true
+
+myExtraIncludes = ".tm_properties,.htaccess,.gitignore,.zshrc,.gitignore_global,.rubocop.yml,.profile,.pryrc,.rvmrc,.bash_profile"
+fileBrowserGlob  = "{*,$myExtraIncludes}"
+include = "{$include,$myExtraIncludes}"
+includeInFileChooser  = "{$includeInFileChooser,$myExtraExcludes}"
+
+myExtraExcludes = "log,vendor,tmp,.sass-cache,.DS_Store"
+excludeInFileChooser  = "{$myExtraExcludes}"
+excludeInFolderSearch = "{$myExtraExcludes}"
+
+excludeInBrowser      = "{$excludeInBrowser,log,vendor,tmp}"
