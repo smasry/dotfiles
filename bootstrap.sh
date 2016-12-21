@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "${BASH_SOURCE}")";
+# https://github.com/direnv/direnv/issues/210
+shell_session_update() { :; }
 
 git pull origin master;
 

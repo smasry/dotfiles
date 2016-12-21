@@ -86,3 +86,4 @@ source $ZSH/oh-my-zsh.sh
 [[ -s "$HOME/bin/variables.bash" ]] && source "$HOME/bin/variables.bash" # variables
 [[ -s "$HOME/bin/aliases.bash" ]] && source "$HOME/bin/aliases.bash" # aliases
 
+export RUBYOPT='-W0'

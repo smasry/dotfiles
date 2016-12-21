@@ -1,4 +1,13 @@
-TM_RUBY="${HOME}/.rvm/bin/rvm-auto-ruby"
+myExtraIncludes = ".tm_properties,.htaccess,.gitignore,.zshrc,.gitignore_global,.rubocop.yml,.profile,.pryrc,.rvmrc,.bash_profile"
+fileBrowserGlob  = "{*,$myExtraIncludes}"
+include = "{$include,$myExtraIncludes}"
+includeInFileChooser  = "{$includeInFileChooser,$myExtraExcludes}"
+
+myExtraExcludes = "log,vendor,tmp,.sass-cache,.DS_Store"
+excludeInFileChooser  = "{$myExtraExcludes}"
+excludeInFolderSearch = "{$myExtraExcludes}"
+
+excludeInBrowser      = "{$excludeInBrowser,log,vendor,tmp}"
 
 softTabs    = true
 softWrap    = false
@@ -6,6 +15,8 @@ tabSize     = 2
 wrapColumn  = 80
 
 fontSize= 16
+
+TM_RUBY="${HOME}/.rvm/bin/rvm-auto-ruby"
 
 [ "{README,INSTALL,LICENSE,TODO}" ]
 fileType         = "text.plain"
@@ -21,13 +32,3 @@ softWrap        = false
 [ *.{icns,ico,jpg,jpeg,m4v,nib,pdf,png,psd,pyc,rtf,tif,tiff,xib} ]
 binary           = true
 
-myExtraIncludes = ".tm_properties,.htaccess,.gitignore,.zshrc,.gitignore_global,.rubocop.yml,.profile,.pryrc,.rvmrc,.bash_profile"
-fileBrowserGlob  = "{*,$myExtraIncludes}"
-include = "{$include,$myExtraIncludes}"
-includeInFileChooser  = "{$includeInFileChooser,$myExtraExcludes}"
-
-myExtraExcludes = "log,vendor,tmp,.sass-cache,.DS_Store"
-excludeInFileChooser  = "{$myExtraExcludes}"
-excludeInFolderSearch = "{$myExtraExcludes}"
-
-excludeInBrowser      = "{$excludeInBrowser,log,vendor,tmp}"
