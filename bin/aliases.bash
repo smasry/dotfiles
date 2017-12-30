@@ -11,3 +11,6 @@ alias rdba='rdb && rdbs; rdbt'
 alias f='foreman start'
 
 alias tl="bundle exec testrbl -I test"
+
+alias e='ember'
+alias eg='e generate'
