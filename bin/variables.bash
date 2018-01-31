@@ -1,3 +1,3 @@
 #!/bin/bash
-export BUNDLER_EDITOR='mate'
+export BUNDLER_EDITOR='atom'
 export PARALLEL_TEST_PROCESSORS=4
