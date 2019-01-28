@@ -8,6 +8,10 @@ alias rdb='r db:environment:set RAILS_ENV=development; r db:drop; r db:create; r
 alias rdbt='r db:environment:set db:migrate RAILS_ENV=test'
 alias rdbs='rdb; r db:seed'
 alias rdba='rdbs; rdbt'
+
+alias rkdb='RAILS_ENV=development rake db:drop db:create db:migrate'
+alias rkdbt='RAILS_ENV=test rake db:drop db:create db:migrate'
+
 alias f='foreman start'
 
 alias tl="bundle exec testrbl -I test"
