@@ -87,3 +87,5 @@ source $ZSH/oh-my-zsh.sh
 [[ -s "$HOME/bin/aliases.bash" ]] && source "$HOME/bin/aliases.bash" # aliases
 
 export RUBYOPT='-W0'
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
