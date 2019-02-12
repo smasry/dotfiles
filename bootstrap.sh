@@ -14,6 +14,7 @@ function doIt() {
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
+        apm install --packages-file ~/.atom/package.list
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
